@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="icon" type="image/png" href="headpic.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo"><img src="GivensLogo.png" alt="Logo"></div>
+        <h1>To-Do List</h1>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <div class="time-inputs">
+                <label>Start: <input type="time" id="startTimeInput"></label>
+                <label>End: <input type="time" id="timeInput"></label>
+            </div>
+            <button onclick="addTask()">Add</button>
+        </div>
+        <div class="task-section">
+            <div class="task-header">
+                <h2>Tasks</h2>
+                <span id="taskCounter" class="task-counter">0 tasks</span>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Created By Given Makatu</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
